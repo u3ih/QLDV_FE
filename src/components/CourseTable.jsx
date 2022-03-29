@@ -32,7 +32,7 @@ function ClassTable() {
         fetchData()
     }, [])
 
-    useEffect(async () => {
+    useEffect(() => {
 
       async function fetchData() {
         const respone = await getCourseWithStudents();

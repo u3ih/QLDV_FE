@@ -21,11 +21,21 @@ Bài toán quản lý sinh viên
 - `Student`: em chia làm 3 Component
     + `StudentTable`: hiển thị danh sách sinh viên (tên, tuổi, địa chỉ,.., thao tác sửa, xóa)
         + ![Optional Text](../master/myFolder/StudentTable.png)
+        + Dữ liệu hiển thị là Student relation với Course được em call API lại mỗi khi student hoặc course có thay đổi
+            + ![Optional Text](../master/myFolder/functionStudentWithCourse.png)
+
     + `AddStudent`: Form để thêm mới student
+        + Kiểm tra dữ liệu với 2 trường age và mã sinh viên
+            + ![Optional Text](../master/myFolder/errorAge.png)
+
     + `StudentForm`: hiển thị `StudentTable` và `AddStudent`
+
 - `Course`: em cũng chia làm 3 phần
     + `CourseTable`: hiển thị danh sách khóa học và thao tác xóa
+        + Dữ liệu hiển thi là Course relation với Student được em call API lại mỗi khi student hoặc course có thay đổi
+            + ![Optional Text](../master/myFolder/functionCourseWithStudent.png)
     + `AddCourse`: Form để thêm mới course
     + `CourseForm`: hiển thị `CourseTable` và `AddCourse`
 - `DashBoard`: trang tổng quan để hiện thị các bảng (`StudentTable`, `CourseTable`)
 - `ClassForm`: Form để gắn student và class vào course
+    + ![Optional Text](../master/myFolder/addStudentToCourse.png)
