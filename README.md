@@ -20,7 +20,7 @@ Bài toán quản lý sinh viên
 - `Sidebar`: để quản lý và điều hướng các bảng Student, Course, DashBoard và trang để thêm sinh viên vào lớp học
 - `Student`: em chia làm 3 Component
     + `StudentTable`: hiển thị danh sách sinh viên (tên, tuổi, địa chỉ,.., thao tác sửa, xóa)
-        + ![Optional Text](../main/myFolder/StudentTable.png)
+        + ![Optional Text](../master/myFolder/StudentTable.png)
     + `AddStudent`: Form để thêm mới student
     + `StudentForm`: hiển thị `StudentTable` và `AddStudent`
 - `Course`: em cũng chia làm 3 phần
